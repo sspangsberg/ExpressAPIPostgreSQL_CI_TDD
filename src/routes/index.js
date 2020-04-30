@@ -1,8 +1,9 @@
 import express from 'express';
-import { APP_NAME } from '../settings';
-
+import { indexPage } from '../controllers/home';
+import { contactPage } from '../controllers/contact';
 const indexRouter = express.Router();
 
-indexRouter.get('/', (req, res) => res.status(200).json({ message: APP_NAME }));
+indexRouter.get('/', indexPage);
+indexRouter.get('/contactus', contactPage);
 
 export default indexRouter;
