@@ -7,7 +7,7 @@ describe('Contact Us page test', () => {
       .expect(200)
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        expect(res.body.message).to.equal('This is the contact info');
+        expect(res.body.message).to.equal('This is the contact information');
         done();
       });
   });

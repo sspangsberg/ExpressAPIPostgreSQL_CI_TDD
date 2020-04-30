@@ -7,7 +7,7 @@ describe('Index page test', () => {
       .expect(200)
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        expect(res.body.message).to.equal('Express API with TDD and CD/CI');
+        expect(res.body.message).to.equal('Welcome to my ExpressJS TDD CI web app :)');
         done();
       });
   });
