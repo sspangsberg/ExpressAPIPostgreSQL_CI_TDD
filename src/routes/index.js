@@ -2,9 +2,9 @@ import express from 'express';
 import { indexPage } from '../controllers/home';
 import { contactPage } from '../controllers/contact';
 
-const indexRouter = express.Router();
+const router = express.Router();
 
-indexRouter.get('/', indexPage);
-indexRouter.get('/contactus', contactPage);
+router.get('/', indexPage);
+router.get('/contactus', contactPage);
 
-export default indexRouter;
+export default router;
